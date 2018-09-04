@@ -1,0 +1,14 @@
+C:\Proyectos C#\BankApp\BancoApp\DataLayer\bin\Release\DataLayer.dll.config
+C:\Proyectos C#\BankApp\BancoApp\DataLayer\bin\Release\DataLayer.dll
+C:\Proyectos C#\BankApp\BancoApp\DataLayer\bin\Release\DataLayer.pdb
+C:\Proyectos C#\BankApp\BancoApp\DataLayer\bin\Release\EntityFramework.dll
+C:\Proyectos C#\BankApp\BancoApp\DataLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Proyectos C#\BankApp\BancoApp\DataLayer\bin\Release\EntityFramework.xml
+C:\Proyectos C#\BankApp\BancoApp\DataLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\Proyectos C#\BankApp\BancoApp\DataLayer\obj\Release\DataLayer.Migrations.Initial.resources
+C:\Proyectos C#\BankApp\BancoApp\DataLayer\obj\Release\DataLayer.Migrations.Sec.resources
+C:\Proyectos C#\BankApp\BancoApp\DataLayer\obj\Release\DataLayer.csproj.GenerateResource.cache
+C:\Proyectos C#\BankApp\BancoApp\DataLayer\obj\Release\DataLayer.csproj.CoreCompileInputs.cache
+C:\Proyectos C#\BankApp\BancoApp\DataLayer\obj\Release\DataLayer.csproj.CopyComplete
+C:\Proyectos C#\BankApp\BancoApp\DataLayer\obj\Release\DataLayer.dll
+C:\Proyectos C#\BankApp\BancoApp\DataLayer\obj\Release\DataLayer.pdb

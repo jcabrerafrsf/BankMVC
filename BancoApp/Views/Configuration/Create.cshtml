@@ -1,0 +1,81 @@
+﻿@model DataLayer.Entities.AccountType
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content-header">
+    <h1>
+        Accounts Type
+        <small>Create</small>
+    </h1>
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <!-- left column -->
+        <div class="col-lg-12">
+            <!-- general form elements -->
+            <div class="box box-danger">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Create a Account Type</h3>
+                </div>
+                <!-- /.box-header -->
+                <!-- form start -->
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <form role="form">
+
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        <div class="box-body">
+
+                            <div class="form-group">
+                                <label for="Name">Name</label>
+                                <input type="text" class="form-control" name="Name" id="Name" placeholder="Enter name" required>
+                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Name">Max Deposit</label>
+                                <input type="text" class="form-control" name="MaxDeposit" id="MaxDeposit" placeholder="Enter MaxDeposit" required>
+                                @Html.ValidationMessageFor(model => model.MaxDeposit, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Name">Max Extracion</label>
+                                <input type="text" class="form-control" name="MaxExtracion" id="MaxExtracion" placeholder="Enter MaxExtracion" required>
+                                @Html.ValidationMessageFor(model => model.MaxExtracion, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Name">Max Transfer</label>
+                                <input type="number" class="form-control" name="MaxTransfer" id="MaxTransfer" placeholder="Enter MaxExtracion" required>
+                                @Html.ValidationMessageFor(model => model.MaxTransfer, "", new { @class = "text-danger" })
+                            </div>
+
+                        </div>
+                        <!-- /.box-body -->
+
+                        <div class="box-footer">
+                            <button type="submit" value="Create" class="btn btn-github">Create</button>
+                            @Html.ActionLink("Volver", "Index", "Configuration", null, new { @class = "btn btn-default" })
+                        </div>
+
+                    </form>
+                }
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+    <!-- /.row -->
+</section>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

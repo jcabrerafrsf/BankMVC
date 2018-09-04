@@ -1,0 +1,63 @@
+﻿@model DataLayer.Entities.Account
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content-header">
+    <h1>
+        Accounts
+        <small>Details</small>
+    </h1>
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <!-- left column -->
+        <div class="col-lg-12">
+            <!-- general form elements -->
+            <div class="box box-danger">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Details</h3>
+                </div>
+                <!-- /.box-header -->
+                <!-- form start -->
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <form role="form">
+
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        <div class="box-body">
+
+                            <div class="form-group">
+                                <label for="Name">Credit</label>
+                                <input type="text" class="form-control" name="Credit" id="Credit" value="@Model.Credit" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Name">Account Type</label>
+                                <input type="text" class="form-control" name="AccountType.Name" id="AccountType.Name" value="@Model.AccountType.Name" readonly>
+                            </div>
+
+                        </div>
+                        <!-- /.box-body -->
+
+                        <div class="box-footer">
+                            @Html.ActionLink("Volver", "Index", "Account", null, new { @class = "btn btn-default" })
+                            @Html.ActionLink("Create a movement", "CreateMovement", "Account", new { id = Model.Id }, new { @class = "btn bg-purple" })
+                        </div>
+
+                    </form>
+                }
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+    <!-- /.row -->
+</section>
