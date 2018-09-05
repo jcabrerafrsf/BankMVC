@@ -7,11 +7,11 @@ namespace DataLayer.Entities
     public class Movement
     {
 
-        public Guid Id { get; protected set; }
+        public Guid Id { get; set; }
 
         public decimal Amount { get; set; }
 
-        public string Type { get; set; }
+        public MovementType Type { get; set; }
 
         public DateTime Date { get; set; }
 

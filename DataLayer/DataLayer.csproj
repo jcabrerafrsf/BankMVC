@@ -50,6 +50,7 @@
     <Compile Include="EjercMVCDBContext.cs" />
     <Compile Include="Entities\Account.cs" />
     <Compile Include="Entities\AccountType.cs" />
+    <Compile Include="Entities\MovementType.cs" />
     <Compile Include="Entities\Movement.cs" />
     <Compile Include="Entities\Bank.cs" />
     <Compile Include="Entities\Customer.cs" />
@@ -62,6 +63,10 @@
     <Compile Include="Migrations\201808301556236_Initial.cs" />
     <Compile Include="Migrations\201808301556236_Initial.Designer.cs">
       <DependentUpon>201808301556236_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809051458500_Initial1.cs" />
+    <Compile Include="Migrations\201809051458500_Initial1.Designer.cs">
+      <DependentUpon>201809051458500_Initial1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,6 +87,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201808301556236_Initial.resx">
       <DependentUpon>201808301556236_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809051458500_Initial1.resx">
+      <DependentUpon>201809051458500_Initial1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

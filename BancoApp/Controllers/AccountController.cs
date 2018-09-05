@@ -177,7 +177,7 @@ namespace BancoApp.Controllers
 
         public ActionResult CreateMovement(Guid id)
         {
-            return RedirectToAction("Create", "Movement", new { id });
+            return RedirectToAction("CreateFirst", "Movement", new { id });
         }
     }
 }
